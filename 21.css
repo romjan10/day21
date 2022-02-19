@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-menu{
+    background-color: #3498db;
+}
+.header-menu ul{
+    text-align: center;
+}
+.header-menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.header-menu ul li a{
+    color: #fff;
+    padding: 15px 60px;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+   
+    border-right: 1px solid #ddd;
+}
+.header-menu ul li:first-child a{
+    border-left: 1px solid #ddd;
+}
+.header-menu ul li:hover > a{
+    background: #2980b9;
+}
+
+
+/* dropdown menu start */
+.header-menu ul li{
+    position: relative;
+}
+
+.header-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    background-color: #3498db;
+    border-top: 1px solid #ddd;
+
+    transition: .4s;
+}
+.header-menu ul li ul li{
+    display: block;
+    margin-left: 0;
+}
+.header-menu ul li ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+.header-menu ul ul li:first-child a{
+    border-left: none;}
+    /* hover part */
+    .header-menu ul li ul{
+      opacity: 0;
+      visibility: hidden;
+
+      transform: scaleY(0);
+
+      transform-origin: top center;
+    }
+    .header-menu ul li:hover ul{
+       opacity: 1;
+       visibility: visible;
+
+       transform: scaleY(1);
+    }
+    
+
+.header-menu ul li ul li a:hover{}
+
